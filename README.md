@@ -11,7 +11,7 @@
 https://orm.drizzle.team/learn/tutorials/drizzle-with-turso
 
 ### Auth.js
-https://authjs.dev/getting-started/authentication/oauth
+https://authjs.dev/getting-started/authentication/oauth<br>
 https://authjs.dev/getting-started/adapters/drizzle
 
 ### Other important info
