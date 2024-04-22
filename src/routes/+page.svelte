@@ -14,6 +14,7 @@
             <div class="flex flex-col gap-2">
                 <h1 class="text-xl">{`Welcome, ${session?.user?.name}`}</h1>
                 <p class="">{`Email: ${session?.user?.email}`}</p>
+                <p>{`User ID: ${session?.user?.id}`}</p>
                 <button class="btn btn-error" on:click={() => signOut()}>Logout</button>
             </div>
         </div>
