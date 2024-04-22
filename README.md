@@ -8,7 +8,8 @@
 ## Important documentation
 
 ### Turso + Drizzle initialization
-https://orm.drizzle.team/learn/tutorials/drizzle-with-turso
+https://orm.drizzle.team/learn/tutorials/drizzle-with-turso<br>
+https://docs.turso.tech/sdk/ts/orm/drizzle
 
 ### Auth.js
 https://authjs.dev/getting-started/authentication/oauth<br>
