@@ -7,10 +7,21 @@
 
 <main class="h-screen flex flex-col justify-center items-center">
     {#if session}
-        <h1>{`Session found. Welcome ${session?.user?.name}`}</h1>
-        <button class="btn" on:click={() => signOut()}>Logout</button>
+        <div class="card p-5 shadow-2xl flex flex-row justify-center items-center gap-4">
+            <div class="">
+                <img src={session?.user?.image} alt="profile" class="rounded-full" />
+            </div>
+            <div class="flex flex-col gap-2">
+                <h1 class="text-xl">{`Welcome, ${session?.user?.name}`}</h1>
+                <p class="">{`Email: ${session?.user?.email}`}</p>
+                <button class="btn btn-error" on:click={() => signOut()}>Logout</button>
+            </div>
+        </div>
     {:else}
-        <h1>Session not found. Please login</h1>
-        <button class="btn" on:click={() => signIn("google")}>Login</button>
+        <div class="card p-6 shadow-2xl flex flex-col justify-center gap-2">
+            <h1 class="text-2xl">Session not found. Please login</h1>
+            <button class="btn" on:click={() => signIn("google")}>Login</button>
+        </div>
+      
     {/if}
 </main>
