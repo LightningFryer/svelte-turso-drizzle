@@ -17,7 +17,7 @@ https://authjs.dev/getting-started/adapters/drizzle
 
 ### Other important info
 
-- Use `npx drizzle-kit generate:sqlite` for pushing changes to the turso database.
+- Use `npx drizzle-kit push:sqlite` for pushing changes to the turso database.
 - The Auth.js documentation tells you to import the turso `db` client function from the `schema.ts` file itself to use in `auth.ts`. This, in my opinion, is a bad idea. So I separated the client and the schema into 2 files namely `db.ts` for the client and `schema.ts` for the schema file. Then I just imported the `db` client function from `db.ts` instead. 
 
 
